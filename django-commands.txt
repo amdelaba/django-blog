@@ -1,0 +1,42 @@
+# Django console commands
+site: http://tutorial.djangogirls.org/en/django_start_project/index.html
+============================
+
+# Make a virtualenv called myvenv
+python -m venv myvenv
+
+# Start your virtual environment
+myvenv\Scripts\activate
+
+# Installing Django
+pip install django==1.8
+
+# The first step is to start a new Django project.
+django-admin startproject mysite .
+
+# Setup a database
+python manage.py migrate
+
+# Start the web server
+python manage.py runserver
+
+# Create an application
+python manage.py startapp blog
+
+# Add our new model to our database
+python manage.py makemigrations blog
+python manage.py migrate blog
+
+
+# Create admin/superuser
+python manage.py createsuperuser
+ -username: admmin 
+ -pass: adminPass
+
+ 
+
+
+
+
+
+
